@@ -6,11 +6,9 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
-
 import matplotlib.pyplot as plt
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
-
 
 class SigmoidLoss(nn.Module):
     def __init__(self, K, alpha, device):
